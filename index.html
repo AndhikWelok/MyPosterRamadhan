@@ -31,8 +31,13 @@
   <body>
     
   <form action="https://formsubmit.co/4d800908f9bc06ad4073292e12bce258" method="POST">
-     <input type="email" name="email" placeholder="Email Address" required>
-     <input type="text" name="name" placeholder="write your message" required>
+
+    <!--Disable Captcha-->
+    <input type="hidden" name="_captcha" value="false">
+    
+     <input type="email" name="email" placeholder="tulis emailmu..." required>
+     <input type="text" name="name" placeholder="masukkan usernamemu" required>
+     <input type="textarea" name="message" placeholder="tulis apa sih kesanmu di awal bulan ramadhan ini...">
      <button type="submit">Send</button>
 </form>
     
