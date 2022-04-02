@@ -7,45 +7,113 @@
     <!--------CSS----------->
     <style type="text/css">
 
-      input{
+      body{
+        background-color: #1c1c1c;
+      }
+
+      input , textarea{
         margin: 10px;
 
       }
 
-      form {
-        background-color: #ff7e7e;
-        width: 280px;
-        box-shadow: yellow 5px 8px;
-        margin: 20px;
-      }
+     
 
       button{
-        padding: 20px;
-        background-color: transparent;
+        padding: 10px 40px;
+        background-color: #5ec1d1;
+        border: solid #5ec1d1;
+        margin: 20px;
 
       }
+
+      button:hover{
+        background-color: lime;
+        border: solid lime;
+      }
+
+      img{
+        margin: 20px;
+        
+      }
+
+      .gam{
+        background-color: #375ca6;
+        width: 380px;
+        height: 480px;
+        border-radius: 10px;
+      }
+
+      form{
+        background-color: white;
+        width: 380px;
+      }
+
+      input{
+        width: 300px;
+      }
+
+      h3{
+        background-color: #5ec1d1;
+      }
+
+
+
 
 
 
     </style>
   </head>
-  <body>
+  
+   <center>
+  <div class="gam">
+   <img src="gambarku.jpg" width="300">
+    
+  </div>
+  </center>
+
+  
+
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<center>
     
   <form action="https://formsubmit.co/4d800908f9bc06ad4073292e12bce258" method="POST">
+
+    <center><h3>Pesan Untuk Awal Puasa</h3></center>
 
     <!--Disable Captcha-->
     <input type="hidden" name="_captcha" value="false">
 
-     <input type="email" name="email" placeholder="tulis emailmu..." required>
-     <input type="text" name="name" placeholder="masukkan usernamemu" required>
-     <textarea name="message" placeholder="masukkan apa pesanmu bagi teman teman yang melaksanakan ibadah puasa"></textarea>
+     <span>Email</span>
+     <br>
+     <input type="email" name="email" placeholder="tulis emailmu..." required >
+     <br>
+     <span>Username</span>
+     <input type="text" name="name" placeholder="masukkan username kamu..." required>
+     <br>
+     <span>message</span>
+     <textarea name="message" placeholder="masukkan apa pesan dan kesanmu di awal bulan ramadhan ini" cols="39" rows="10"></textarea>
 
      <br>
 
-     <button type="submit">Send</button>
+     <button type="submit" onclick="isi()">Send</button>
+
 </form>
+
+</center>
     
     <!--------javaScript------------->
+
+    <script>
+      var nama = prompt("masukkan nama anda")
+      alert("halo " + nama + " selamat datang")
+
+      function isi(){
+        alert("Terimakasih")
+
+      }
+    </script>
     
     </script>
     
